@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
+      max-parallel: 3
       matrix:
-        max-parallel: 3
         os: [ubuntu-latest, windows-latest, macOS-latest]
         python-version: [3.7]
 
